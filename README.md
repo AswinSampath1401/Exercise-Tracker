@@ -19,9 +19,9 @@
 
 # ScreenShots 
 
-![HomePage](assets\home.PNG)
+![HomePage](https://github.com/AswinSampath1401/Exercise-Log/blob/main/assets/home.PNG)
 
-![Add Exercise](assets\create_exercise.PNG)
+![Add Exercise](https://github.com/AswinSampath1401/Exercise-Log/blob/main/assets/create_exercise.PNG)
 
-![Add User](assets\create_user.PNG)
+![Add User](https://github.com/AswinSampath1401/Exercise-Log/blob/main/assets/create_user.PNG)
 
