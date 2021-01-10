@@ -1,6 +1,6 @@
-![GitHub forks](https://img.shields.io/github/forks/AswinSampath1401/Exercise-Log?color=yellow&logo=github&style=for-the-badge)
-![GitHub Repo stars](https://img.shields.io/github/stars/AswinSampath1401/Exercise-Log?color=red&logo=github&style=for-the-badge)
-![GitHub watchers](https://img.shields.io/github/watchers/AswinSampath1401/Exercise-Log?color=blue&logo=github&style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/AswinSampath1401/Exercise-Tracker?color=yellow&logo=github&style=for-the-badge)
+![GitHub Repo stars](https://img.shields.io/github/stars/AswinSampath1401/Exercise-Tracker?color=red&logo=github&style=for-the-badge)
+![GitHub watchers](https://img.shields.io/github/watchers/AswinSampath1401/Exercise-Tracker?color=blue&logo=github&style=for-the-badge)
 
 ![Twitter Follow](https://img.shields.io/twitter/follow/i_am_Ash_?color=blue&logo=twitter&style=for-the-badge)
 
@@ -25,9 +25,10 @@
 
 # ScreenShots 
 
-![HomePage](https://github.com/AswinSampath1401/Exercise-Log/blob/main/assets/home.PNG)
+![HomePage](https://github.com/AswinSampath1401/Exercise-Tracker/blob/main/assets/home.PNG)
 
-![Add Exercise](https://github.com/AswinSampath1401/Exercise-Log/blob/main/assets/create_exercise.PNG)
+![Add Exercise](https://github.com/AswinSampath1401/Exercise-Tracker/blob/main/assets/create_exercise.PNG)
 
-![Add User](https://github.com/AswinSampath1401/Exercise-Log/blob/main/assets/create_user.PNG)
+![Add User](https://github.com/AswinSampath1401/Exercise-Tracker/blob/main/assets/create_user.PNG)
 
+# Made with :gift_heart:
