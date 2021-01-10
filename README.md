@@ -1,3 +1,9 @@
+![GitHub forks](https://img.shields.io/github/forks/AswinSampath1401/Exercise-Log?color=yellow&logo=github&style=for-the-badge)
+![GitHub Repo stars](https://img.shields.io/github/stars/AswinSampath1401/Exercise-Log?color=red&logo=github&style=for-the-badge)
+![GitHub watchers](https://img.shields.io/github/watchers/AswinSampath1401/Exercise-Log?color=blue&logo=github&style=for-the-badge)
+
+![Twitter Follow](https://img.shields.io/twitter/follow/Ash1401?color=blue&logo=twitter&style=for-the-badge)
+
 # Instructions to Run the Project
 
 # Pre-Requisite
