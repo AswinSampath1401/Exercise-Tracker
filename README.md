@@ -17,3 +17,11 @@
     - npm start
     - FrontEnd will run on port 3000
 
+# ScreenShots 
+
+![HomePage](assets\home.PNG)
+
+![Add Exercise](assets\create_exercise.PNG)
+
+![Add User](assets\create_user.PNG)
+
