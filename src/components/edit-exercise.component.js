@@ -85,8 +85,11 @@ export default class EditExercise extends Component {
     }
 
     console.log(exercise);
+    /* Important
 
-    axios.post('http://localhost:5000/exercises/update/' + this.props.match.params.id, exercise)
+    Put request instead of post request 
+    */
+    axios.put('http://localhost:5000/exercises/update/' + this.props.match.params.id, exercise)
       .then(res => console.log(res.data));
 
     window.location = '/';
@@ -95,11 +98,11 @@ export default class EditExercise extends Component {
   render() {
     return (
     <div>
-      <h3>Edit Exercise Log</h3>
+      <h1 className="text-primary">Edit Exercise Log</h1>
       <form onSubmit={this.onSubmit}>
         <div className="form-group"> 
           <label>Username: </label>
-          <select ref="userInput"
+          <select
               required
               className="form-control"
               value={this.state.username}

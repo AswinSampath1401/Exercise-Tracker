@@ -1,29 +1,26 @@
-import React , { Component } from 'react';
-import { Link } from 'react-router-dom';
+import React, {Component} from 'react';
+import {Link } from 'react-router-dom';
 
-export default class NavBar extends Component {
+export default class Navbar extends Component{
 
     render(){
-        return (
-            <nav className = " navbar navbar-dark bg-dark navbar-expand-lg ">
-                <Link to="/" className=" navbar-brand">Exercise Tracker</Link>
-                <div className= " collapse-navbar-collpse">
+        return(
+            <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
+                <Link to="/" className="navbar-brand">ExerciseTracker</Link>
+                <div className="navbar-collapse">
                     <ul className="navbar-nav mr-auto">
                         <li className="navbar-item">
-                            {/* Homepage Link */}
-                            <Link to="/" className="nav-link">Exercises</Link> 
+                            <Link to="/" className="nav-link">Exercises</Link>
                         </li>
                         <li className="navbar-item">
-                            {/* Create Exercise Link */}
                             <Link to="/create" className="nav-link">Create Exercise Log</Link>
                         </li>
                         <li className="navbar-item">
-                            {/* Link to user */}
-                            <Link to="/user" className="nav-link">Create User</Link>
+                            <Link to="/users" className="nav-link">Create user</Link>
                         </li>
                     </ul>
                 </div>
             </nav>
-        )
+        );
     }
 }
