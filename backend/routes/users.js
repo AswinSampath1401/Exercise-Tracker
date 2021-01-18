@@ -1,23 +1,20 @@
 const router = require('express').Router();
-const User = require('../models/user.model');
+let User = require('../models/user.model');
 
-router.route('/').get((req,res)=>{
-    User.find()
+router.route('/').get((req, res) => {
+  User.find()
     .then(users => res.json(users))
-    .catch(err => res.status(400).json('Error' + err) );
+    .catch(err => res.status(400).json('Error: ' + err));
 });
 
+router.route('/add').post((req, res) => {
+  const username = req.body.username;
 
-router.route('/add').post( (req,res)=>{
+  const newUser = new User({username});
 
-    const username = req.body.username;
-    const newUser = new User({username});
-
-    newUser.save()
-        .then( ()=> res.json('User has been added to database') )
-        .catch(err => res.status(400).json('Error' + err) );
-
-} );
-
+  newUser.save()
+    .then(() => res.json('User added!'))
+    .catch(err => res.status(400).json('Error: ' + err));
+});
 
 module.exports = router;

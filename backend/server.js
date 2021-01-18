@@ -1,46 +1,36 @@
 const express = require('express');
-const cors = require('cors');
 const mongoose = require('mongoose');
+const cors = require('cors');
 require('dotenv').config();
 
+// Get the routes 
+const userRoute = require('./routes/users');
+const exerciseRoute = require('./routes/exercises');
 
-const app = express();
 const PORT = process.env.PORT || 5000;
 
-const exerciseRouter = require('./routes/exercises');
-const userRouter = require('./routes/users');
+const app = express();
 
-// MiddleWare Start
-
+// Middlewares
+app.use(cors()) // Understand why to use cors
 app.use(express.json());
-app.use(cors());
+app.use('/users',userRoute);
+app.use('/exercises',exerciseRoute);
+// Middleware end
 
-// MiddleWare End
-
-// Connection to Database(MongoDb Atlas)
+// Database Connection 
 
 const uri = process.env.ATLAS_URI;
-mongoose.connect(uri,{ useNewUrlParser:true , useCreateIndex:true , useUnifiedTopology:true });
+mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology:true }
+);
 const connection = mongoose.connection;
-
-connection.once('open',()=>{
-    console.log(`MongoDB Database Connected Sucessfully!!!`);
+connection.once('open', () => {
+  console.log("MongoDB database connection established successfully");
 })
 
-// Connection End
 
-// Routes Begin
+// Connection end
 
-app.use('/exercises',exerciseRouter); // Exercise router for exercises
-app.use('/users',userRouter); // UserRouter  for users
-
-// Routes end
-
-app.get('/',(req,res)=>{
-    res.send('Welcome to Mern Stack');
-})
-
-app.listen(PORT,()=>{
-    console.log(`App is listening on ${PORT}`);
-})
-
+app.listen(PORT,(req,res)=>{
+    console.log(`App is ruuning on Port ${PORT}`);
+});
